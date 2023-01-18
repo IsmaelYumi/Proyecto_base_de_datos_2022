@@ -26,14 +26,15 @@ public class VentanaPcontroller {
     	String contra=txt_contr.getText();
     	try {
     		Stage s =new Stage();
-    		FXMLLoader fxmloader= new FXMLLoader(getClass().getResource("/vistas/VentanaMenu.fxml"));
+    		FXMLLoader fxmloader= new FXMLLoader(getClass().getResource("/Vistas/VentanaMenu.fxml"));
     		Pane root = fxmloader.load();
-    		Scene scene= new Scene(root,782,501);
+    		Scene scene= new Scene(root,1250,650);
     		s.setScene(scene);
     		s.show();
     		
     	}
     	catch(Exception e) {
+    		e.printStackTrace();
     		
     	}
 

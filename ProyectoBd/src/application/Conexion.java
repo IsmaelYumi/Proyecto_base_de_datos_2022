@@ -6,14 +6,16 @@ import java.sql.Statement;
 
 public class Conexion {
 	private String url="jdbc:mysql://localhost/securecar";
-	private Connection con;
+	public  Connection con;
 	
 public Conexion()  {
 	try {
-	con=DriverManager.getConnection(url);
+	con=DriverManager.getConnection(url,"root","root");
 	}catch(SQLException  ex){
-		System.out.println("Conexion fallida");
 		ex.printStackTrace();
 	}
+}
+public Connection getConexion() {
+	return con;
 }
 }
