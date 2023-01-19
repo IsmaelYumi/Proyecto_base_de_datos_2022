@@ -32,4 +32,21 @@ public class Main extends Application {
 		}
 		return validacion;
 	}
+	public static boolean validacion_vacio(String texto) {
+		boolean vale=true;
+		if(texto.equals(" ")) {
+			vale=true;
+		}else {
+			vale=false;
+			
+		}
+		return vale;
+	
+	}
+	public static boolean Validacion_letras(String texto) {
+		return texto.matches("[a-zA-Z]*");
+	}
+	public static boolean Validacion_numeros(String texto) {
+		return texto.matches("[0-9]*");
+	}
 }

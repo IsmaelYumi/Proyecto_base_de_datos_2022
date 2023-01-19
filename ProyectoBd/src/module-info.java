@@ -6,7 +6,7 @@ module ProyectoBd {
 	requires java.desktop;
 	requires javafx.base;
 	
-	opens application to javafx.graphics, javafx.fxml;
+	opens application to javafx.graphics, javafx.fxml,javafx.base;
 	opens Controladores;
 	exports Controladores;
 	
